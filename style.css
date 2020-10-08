@@ -1,0 +1,59 @@
+h4, p {
+    font-family: 'Raleway', sans-serif;
+  } 
+
+header {
+    
+}
+
+nav {
+    float: right;
+}
+
+#contenue {
+    display: flex;
+    border: 2px solid #444;
+    float: left;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 350px;
+    border: 2px solid #444;
+    margin-right: 50px;
+}
+
+.hebergement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 350px;
+    border: 2px solid #444;
+}
+.bloc {
+    background-color: orange;
+    width: 150px;
+    height: 120px;
+}
+
+.bloc:nth-child(2){
+    background-color: orchid;
+}
+
+.bloc2 {
+    background-color: blue;
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+
+
+
+header, footer {
+    background-color: grey;
+    clear: both;
+}
