@@ -1,78 +1,130 @@
 body {
     font-family: 'Raleway', sans-serif;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    margin-right: 40px;
   } 
 
-header {
+p {
+    font-size: 12px;
+}
+#header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
 }
 
-#logo {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-#logo img {
+.logo {
     width: 70px;
 }
 
-#menu {
-    display: inline-block;
-    
-}
-nav ul {
-    list-style-type: none;
+.nav {
     display: flex;
 }
-nav li
-{
-    margin-right: 30px;
-}
-nav a
-{
-    font-size: 13px;
-    color: #0065FC;
-    padding-bottom: 3px;
+
+a {
     text-decoration: none;
-}
-nav a:hover
-{
-    border-top: 1px solid #0065FC;
+    margin-left: 30px;
+    color: #0065FC;
 }
 
-
-
-#recherche {
-    width: 90%; /* Largeur de la section*/
-    padding: 10px; /* Marge interieur */
-    margin: 20px; /* Marge exterieur */
+a:hover {
+    color: #0065FC;
+    border-top: 2px solid;
 }
 
 
-#contenair {
+#searchSection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    border: 2px solid #444;
-    width: 90%; /* Largeur de la section*/
-    padding: 10px; /* Marge interieur */
-    margin: 20px; /* Marge exterieur */
-    border-radius: 10px;
+    flex-direction: column;
 }
 
-.element {
-    background-color: rgb(184, 154, 98);
-    border-radius: 5px;
-    width: 65%;
-    margin: 5px;
+.titleSearch {
+    border: 1px solid;
+    /* max-width: 60%; */
+}
+    
+.barSearch {
+    display: flex;
+    height: 40px;
+}
+.barSearch i {
+    color: black;
+}
+.barSearch input {
+    border-left: none;
+    border-right: none;
+    border-top: 0.5px solid #F2F2F2;
+    border-bottom: 0.5px solid #F2F2F2;
+}
+.barSearch button {
+    color: white;
+    background-color: #0065FC;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: none;
+}
+
+.map {
+    width: 25px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+
+
+
+
+#filterSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.filtresText {
+    border: 1px solid;
+    height: 40px;
+    font-weight: bold;
     margin-right: 20px;
 }
-.element:nth-child(2) {
-    background-color: rgb(184, 118, 118);
-    border-radius: 5px;
-    width: 25%;
-    margin: 5px;
+.eco {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 150px;
+    margin-right: 20px;
+    height: 40px;
+}
+.familial {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 150px;
+    margin-right: 20px;
+    height: 40px;
+}
+.romantique {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 150px;
+    margin-right: 20px;
+    height: 40px;
+}
+.animaux {
+    border: 1px solid;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info p {
+    margin-left: 4px;
 }
 
 
@@ -80,11 +132,65 @@ nav a:hover
 
 
 
-header, footer {
-    background-color: grey;
-    clear: both;
+
+
+
+
+
+#hebergSection {
     display: flex;
-    width: 90%; /* Largeur de la section*/
-    padding: 10px; /* Marge interieur */
-    margin: 20px; /* Marge exterieur */
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    max-width: 70%;
+}
+
+.blocs6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.hotelHeberg {
+    background-color: white;
+    display: inline-block;
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    line-height: 0px; /* supp l'espace entre chaque ligne*/
+}
+
+.imgHeberg {
+    width: 97%;
+    height: 100px;
+    margin: 3px 0px 0px 4px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titreHeberg {
+    margin-left: 15px;
+}
+.tarifHeberg {
+    margin-left: 15px;
+}
+.etoileHeberg {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.fas {
+    color: #0065FC;
+    font-size: 12px;
+}
+.far {
+    color: #F2F2F2;
+    font-size: 12px;
+}
+
+.affPlus {
+    width: 100%;
+    margin-left: 15px;
+
 }
