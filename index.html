@@ -14,14 +14,20 @@
   <body>
     <header id="header">
       <div class="logo">
-        <img class="logo" src="images/logo/Reservia.svg" alt="" />
+        <img src="images/logo/Reservia.svg" alt="" />
       </div>
       <div class="nav">
-        <a class="link" href="#hebergSection"><p>Hébergements</p></a>
-        <a class="link" href="#activitySection"><p>Activités</p></a>
-        <a class="link" href="index.html"
-          ><p class="sinscrire">S'inscrire</p></a
-        >
+        <div class="menuAncre">
+          <div class="liensMenu">
+            <a class="linkheberg" href="#hebergSection"><p>Hébergements</p> </a>
+          <!-- </div> -->
+          <!-- <div> -->
+            <a class="linkactivity" href="#activitySection"><p>Activités</p></a>
+          </div>
+        </div>
+        <div class="sinscrire">
+          <a class="linksinscrire" href="index.html"><p>S'inscrire</p></a>
+        </div>
       </div>
     </header>
 
@@ -38,27 +44,28 @@
         <button type="button">Rechercher</button>
       </div>
       <div id="filterSection">
-        <div class="filtresText"><p>Filtres</p></div>
+        <div class="filtresText"><p>Filtres</p>
+        </div>
         <a href="">
-          <div class="eco">
+          <div class="typeFiltre">
             <i class="fas fa-money-bill-wave"></i>
             <p>Économique</p>
           </div>
         </a>
         <a href="">
-          <div class="familial">
+          <div class="typeFiltre">
             <i class="fas fa-male fa-1x"></i>
             <p>Familial</p>
           </div>
         </a>
         <a href="">
-          <div class="romantique">
+          <div class="typeFiltre">
             <i class="fas fa-heart"></i>
             <p>Romantique</p>
           </div>
         </a>
         <a href="">
-          <div class="animaux">
+          <div class="typeFiltre">
             <i class="fas fa-dog fa-1x"></i>
             <p>Animaux autorisés</p>
           </div>
@@ -72,7 +79,7 @@
 
     <main>
       <section id="hebergSection">
-        <div class="titleSearch1">
+        <div class="titleSection">
           <p>Hébergements à Marseille</p>
         </div>
 
@@ -226,7 +233,7 @@
       </section>
 
       <section id="popularSection">
-        <div class="titleSearch2">
+        <div class="titleSection">
           <p>Les plus populaires</p>
           <div class="fleche"><i class="fas fa-chart-line fa-1x"></i></div>
         </div>
@@ -235,13 +242,11 @@
           <a href="">
             <div class="hotelPopular">
               <div class="blocimgPopular">
-                <!-- <div> -->
                 <img
                   class="imgPopular"
                   src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                   alt=""
                 />
-                <!-- </div> -->
               </div>
               <div class="infoPopular">
                 <div class="titreHeberg">
@@ -250,7 +255,6 @@
                 <div class="tarifHeberg">
                   <p>Nuit à partir de 128€</p>
                 </div>
-                <div class="espace"></div>
                 <div class="etoileHeberg">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -264,13 +268,11 @@
           <a href="">
             <div class="hotelPopular">
               <div class="blocimgPopular">
-                <!-- <div> -->
                 <img
                   class="imgPopular"
                   src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
                   alt=""
                 />
-                <!-- </div> -->
               </div>
               <div class="infoPopular">
                 <div class="titreHeberg">
@@ -279,7 +281,6 @@
                 <div class="tarifHeberg">
                   <p>Nuit à partir de 71€</p>
                 </div>
-                <div class="espace"></div>
                 <div class="etoileHeberg">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -293,13 +294,11 @@
           <a href="">
             <div class="hotelPopular">
               <div class="blocimgPopular">
-                <!-- <div> -->
                 <img
                   class="imgPopular"
                   src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                   alt=""
                 />
-                <!-- </div> -->
               </div>
               <div class="infoPopular">
                 <div class="titreHeberg">
@@ -308,7 +307,6 @@
                 <div class="tarifHeberg">
                   <p>Nuit à partir de 68€</p>
                 </div>
-                <div class="espace"></div>
                 <div class="etoileHeberg">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -321,9 +319,11 @@
           </a>
         </div>
       </section>
+    </main>
+
 
       <section id="activitySection">
-        <div class="titleSearch3">
+        <div class="titleSection">
           <p>Activités à Marseille</p>
         </div>
         <div class="blocs6Activity">
@@ -396,7 +396,6 @@
           </div>
         </div>
       </section>
-    </main>
 
     <footer id="footer">
       <div class="footer">
