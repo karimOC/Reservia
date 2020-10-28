@@ -172,12 +172,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
-  /* ---------HEBERGEMENTS--------- */
 }
+/* ---------HEBERGEMENTS--------- */
 #hebergSection {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 20px;
@@ -191,16 +189,18 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.blocs6 a {
-  color: black;
-  text-decoration: none;
-}
 .hotelHeberg {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   width: 250px;
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0px 0px 10px 6px rgb(214, 214, 214);
+}
+.hotelHeberg a {
+  color: black;
+  text-decoration: none;
 }
 .imgHeberg {
   width: 100%;
@@ -243,6 +243,7 @@ main {
 }
 /* ---------POPULAIRES--------- */
 #popularSection {
+  display: flex;
   flex-direction: column;
   width: 25%;
   background-color: #f2f2f2;
@@ -251,24 +252,24 @@ main {
 .blocs3 {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .blocs3 a {
   color: black;
   text-decoration: none;
+  display: flex;
 }
 .hotelPopular {
-  background-color: white;
   display: flex;
+  background-color: white;
   width: 90%;
   height: 150px;
   border-radius: 15px;
   margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
+
   box-shadow: 0px 0px 10px 6px rgb(214, 214, 214);
 }
 .blocimgPopular {
-  padding: 3px 3px 3px 3px;
   width: 50%;
 }
 .imgPopular {
@@ -480,7 +481,6 @@ main {
   }
   .blocs3 {
     display: flex;
-    justify-content: space-around;
   }
   .hotelPopular {
     width: 90%;
