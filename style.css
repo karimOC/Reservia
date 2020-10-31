@@ -108,10 +108,6 @@ p {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
-.fleche {
-  display: flex;
-  align-items: center;
-}
 #filterSection {
   display: flex;
   flex-wrap: wrap;
@@ -173,8 +169,8 @@ main {
   border-radius: 20px;
   width: 70%;
 }
-.titleSection i {
-  margin-left: 50px;
+h4 {
+  margin-left: 20px;
 }
 .blocs6 {
   display: flex;
@@ -240,6 +236,18 @@ main {
   width: 25%;
   background-color: #f2f2f2;
   border-radius: 20px;
+}
+.titrePopular {
+  display: flex;
+  justify-content: space-between;
+}
+.fleche {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+.fleche i {
+  color: black;
 }
 .blocs3 {
   display: flex;
@@ -332,6 +340,7 @@ main {
 #footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   background-color: #f2f2f2;
   width: 100%;
   margin-top: 20px;
@@ -339,25 +348,19 @@ main {
 .footer {
   display: flex;
   flex-direction: column;
-  width: 33%;
-  padding: 0px 0px 10px 0px;
+  width: 30%;
+  padding: 0px 0px 10px 10px;
 }
 .footer p {
-  display: flex;
-  flex-direction: column;
   font-weight: bold;
-  margin: 15px 0px 0px 30px;
 }
 .footer a {
-  display: flex;
-  flex-direction: column;
   color: black;
   text-decoration: none;
   font-size: 10px;
-  margin: 10px 0px 0px 30px;
 }
 /* ---------MEDIA QUIERIES TABLETTE--------- */
-@media all and (min-device-width: 469px) and (max-device-width: 768px) {
+@media all and (min-width: 469px) and (max-width: 768px) {
   body {
     margin-left: 0px;
     margin-right: 0px;
@@ -381,7 +384,7 @@ main {
     justify-content: flex-end;
   }
   #searchSection {
-    margin: 0px 0px 0px 15px;
+    margin: 0px 15px 0px 15px;
   }
   #filterSection {
     flex-direction: column;
@@ -391,20 +394,16 @@ main {
   }
   #hebergSection {
     justify-content: center;
-    align-items: center;
     width: 90%;
     margin-top: 20px;
   }
   #popularSection {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 90%;
     margin-top: 20px;
   }
-
   #activitySection {
-    align-items: center;
     margin-top: 20px;
   }
   .blocs6Activity div {
@@ -412,7 +411,7 @@ main {
   }
 }
 /* ---------MEDIA QUIERIES PHONE--------- */
-@media all and (max-device-width: 468px) {
+@media all and (max-width: 468px) {
   body {
     margin-left: 0px;
     margin-right: 0px;
@@ -425,9 +424,6 @@ main {
     flex-direction: column-reverse;
     width: 100%;
   }
-.liensMenu {
-    display: flex;
-  }
   .menuAncre a {
     width: 100%;
   }
@@ -439,7 +435,7 @@ main {
     justify-content: flex-end;
   }
   #searchSection {
-    padding: 0px 0px 0px 15px;
+    padding: 0px 15px 0px 15px;
   }
   #filterSection {
     flex-direction: column;
