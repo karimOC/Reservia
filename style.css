@@ -290,6 +290,9 @@ main {
   flex-direction: column;
   width: 100%;
 }
+#activitySection h4 {
+  margin-left: 20px;
+}
 .blocs6Activity {
   display: flex;
   justify-content: space-around;
