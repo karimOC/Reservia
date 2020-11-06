@@ -241,14 +241,14 @@ main {
   display: flex;
   background-color: white;
   width: 90%;
-  height: 180px;
+  height: 130px;
   border-radius: 15px;
   margin-bottom: 20px;
 
   box-shadow: 0px 0px 10px 6px rgb(214, 214, 214);
 }
 .blocimgPopular {
-  width: 40%;
+  width: 60%;
 }
 .imgPopular {
   width: 100%;
@@ -381,6 +381,9 @@ main {
     width: 90%;
     margin-top: 20px;
   }
+  .hotelPopular {
+    height: 200px;
+  }
   #activitySection {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -414,7 +417,7 @@ main {
     justify-content: flex-end;
   }
   #searchSection {
-    padding: 0px 0px 0px 15px;
+    padding: 0px 15px 0px 15px;
   }
   #filterSection {
     flex-direction: column;
@@ -442,6 +445,7 @@ main {
   }
   .hotelPopular {
     width: 90%;
+    height: 180px;
   }
   .blocs6Activity {
     flex-direction: column;
